@@ -1,0 +1,103 @@
+.user-dashboard{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#0f1115;
+}
+
+.dashboard-card{
+
+    width:550px;
+
+    background:#1b2028;
+
+    border:1px solid #313844;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    text-align:center;
+}
+
+.dashboard-card h1{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-size:34px;
+}
+
+.subtitle{
+
+    color:#8d96a7;
+
+    margin-bottom:35px;
+}
+
+.menu{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+}
+
+.menu button{
+
+    padding:15px;
+
+    background:#262d38;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.menu button:hover{
+
+    background:#3282ff;
+}
+
+.logout-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+    padding:15px;
+
+    background:#d33b3b;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.2s;
+}
+
+.logout-btn:hover{
+
+    background:#ef4444;
+}

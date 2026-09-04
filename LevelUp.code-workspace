@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "levelup_admin"
+		},
+		{
+			"path": "levelup_server"
+		}
+	],
+	"settings": {}
+}

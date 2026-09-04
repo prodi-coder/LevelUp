@@ -1,0 +1,80 @@
+.dashboard-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0b1020 0%, #13182d 100%);
+    padding: 40px;
+}
+
+.dashboard-card {
+    width: 420px;
+
+    background: #151b31;
+    border: 1px solid rgba(130, 92, 255, .25);
+    border-radius: 16px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+
+    box-shadow:
+        0 0 20px rgba(109, 74, 255, .15),
+        0 0 60px rgba(109, 74, 255, .08);
+}
+
+.dashboard-card h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dashboard-card p {
+    color: #b7bfd7;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons button {
+    height: 48px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6d4aff;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.buttons button:hover {
+    background: #825cff;
+    transform: translateY(-2px);
+}
+
+.buttons button:active {
+    transform: scale(.98);
+}
+
+.version {
+    text-align: center;
+    color: #8f96b5;
+    font-size: 13px;
+    margin-top: 10px;
+}

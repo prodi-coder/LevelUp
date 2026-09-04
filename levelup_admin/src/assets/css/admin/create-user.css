@@ -1,0 +1,140 @@
+.create-user-container {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0f1115;
+
+    padding: 40px;
+}
+
+.create-user-card {
+
+    width: 500px;
+
+    background: #1a1d24;
+
+    border: 1px solid #2d333d;
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.45);
+}
+
+.create-user-card h1 {
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.warning {
+
+    color: #ff6868;
+
+    text-align: center;
+
+    min-height: 22px;
+
+    margin-bottom: 15px;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+
+    color: #d7d7d7;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+
+    background: #252b35;
+
+    color: white;
+
+    border: 1px solid #39414d;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #2b8cff;
+}
+
+.buttons {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.buttons button {
+
+    flex: 1;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: .2s;
+}
+
+.cancel-btn {
+
+    background: #444b57;
+}
+
+.cancel-btn:hover {
+
+    background: #555f6f;
+}
+
+.create-btn {
+
+    background: #2b8cff;
+}
+
+.create-btn:hover {
+
+    background: #1f78e6;
+}
