@@ -49,7 +49,7 @@ onMounted(async () => {
 
             <td>{{ user.username }}</td>
 
-            <td>{{ user.role === 1 ? "ادمین" : "کاربر" }}</td>
+            <td>{{ user.role === 1 ? "admin" : "user" }}</td>
 
             <td class="actions">
               <button class="edit-btn">Edit</button>

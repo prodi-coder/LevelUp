@@ -3,6 +3,9 @@ import { ref , onMounted } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 
+const passwordInput = ref<HTMLInputElement | null>(null);
+const confirmPasswordInput = ref<HTMLInputElement | null>(null);
+
 const router = useRouter();
 
 const username = ref("");
@@ -64,29 +67,28 @@ async function createAdmin() {
   <div class="login-container">
     <div class="dashboard-card">
       <div class="welcom-tex">
-        <h2>خوش آمدید!</h2>
+        <h2>Welcome.</h2>
         <h4>
-          این نخستین باری است که Level Up اجرا می‌شود. برای ادامه، اولین حساب کاربری مدیر را ایجاد
-          کنید.
+          This is the first time Level Up is being run. To proceed, create the first administrator account.
         </h4>
       </div>
       <div class="eror"> <p>{{ error }}</p></div>
       <form @submit.prevent="createAdmin" class="login-form">
         <div class="form-group">
           <label>Administrator Username</label>
-          <input v-model="username" type="text" placeholder="UserName" />
+          <input v-model="username" type="text" placeholder="UserName" @keydown.enter.prevent="passwordInput?.focus()"/>
         </div>
         <div class="form-group">
           <label>Administrator Password</label>
-          <input v-model="password" type="password" placeholder="Password" />
+          <input ref="passwordInput" v-model="password" type="password" placeholder="Password" @keydown.enter.prevent="confirmPasswordInput?.focus()"/>
         </div>
         <div class="form-group">
           <label>Confirm Password</label>
-          <input v-model="confirmPassword" type="text" placeholder="Confirm Password" />
+          <input ref="confirmPasswordInput" v-model="confirmPassword" type="text" placeholder="Confirm Password" />
         </div>
         <div class="buttons"><button type="submit">Create Administrator</button></div>
       </form>
-      <div class="coment"><h4>پس از ایجاد حساب کاربری مدیر، صفحه ورود نمایش داده خواهد شد.</h4></div>
+      <div class="coment"><h4>After creating the administrator account, the login page will be displayed.</h4></div>
     </div>
   </div>
 </template>
